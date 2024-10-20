@@ -23,12 +23,9 @@
 #
 
 import argparse
-
 import streamlit as st
-
 from lib.generate import generate
 from lib.util import convert_to_video, get_device
-
 
 def main():
     parser = argparse.ArgumentParser()
@@ -118,7 +115,6 @@ def main():
 
             with col_right:
                 st.video(video)
-
 
 if __name__ == "__main__":
     main()
